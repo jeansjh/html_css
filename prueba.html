@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .contenedor {
+            background-color: coral;
+        }
+        
+        #cabecera {
+            border-bottom: 2px solid black;
+            width: 796px;
+            height: 80px;
+            font-size: 30px;
+            padding-top: 10px;
+            text-align: center;
+        }
+        
+        #menu {
+            float: left;
+            border-top: 0px solid black;
+            border-bottom: 0px solid black;
+            width: 198px;
+            padding: 1px;
+        }
+        
+        button {
+            margin: 0 auto;
+            display: block;
+            margin-top: 20px;
+        }
+        
+        #contenido {
+            float: left;
+            width: 580px;
+            padding: 8px;
+            height: auto;
+            background-color: #F3F781;
+            text-align: center;
+            min-height: 400px;
+            position: relative;
+        }
+        /* el iframe debe ocupar todo el espacio de #contenido */
+        
+        #contenido iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            border: 0;
+        }
+        /* le damos estilos a los enlaces para que parezcan botones */
+        
+        #menu a {
+            display: inline-block;
+            margin: 3px 10px;
+            padding: 4px 10px;
+            background: #eee;
+            color: #333;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="contenedor" id="contenedor">
+
+
+        <div id="menu">
+            <a target="miIframe" href="https://es.stackoverflow.com">Ejercicio 1</a>
+            <a target="miIframe" href="https://www.google.com">Ejercicio 2</a>
+            <a target="miIframe" href="https://www.facebook.com">Ejercicio 3</a>
+        </div>
+
+        <div id="contenido">
+            <div id="cabecera">
+                EXAMEN PHP<br> Mario Guiberteau
+            </div>
+            <iframe name="miIframe"></iframe>
+        </div>
+    </div>
+</body>
+
+</html>
